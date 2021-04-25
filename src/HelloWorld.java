@@ -98,8 +98,8 @@ public class HelloWorld {
 
         // 14.
 
-        int z = Integer.MAX_VALUE;
-        z += 1;
+        float z = Integer.MAX_VALUE;
+        z -= 1;
         System.out.println(z);
         // prints -2147483648 may be over floating
 
