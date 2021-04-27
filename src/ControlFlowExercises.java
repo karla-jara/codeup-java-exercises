@@ -88,33 +88,40 @@ public class ControlFlowExercises {
         // 4. Convert given number grades to letter grades
 
 
-        Scanner input = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         Scanner input2 = new Scanner(System.in);
+// is only one Scanner needed for multiple inputs in this case two inputs integer and string
+        String answer;
+        do {
+            System.out.println("Please provide a grade from 0 to 100");
+            int userGr = sc.nextInt();
+            String grade = "";
 
-        String answer = input2.next();
-        System.out.println("Please provide a grade from 0 to 100");
-        int userGr = input.nextInt();
-//        String proceed = answer;
-//        while (answer == "yes"){
-//            System.out.println("Would you like to continue? Enter yes or no");
-        if ((userGr >= 88) && (userGr <= 100)){
-            System.out.println("You received an A");
+            if (userGr >= 88){
+                grade = String.valueOf('A');
 
-        } else if ((userGr >= 80) && (userGr <= 87)){
-            System.out.println("You received an B");
+            } else if (userGr >= 80){
+                grade = String.valueOf('B');
 
-        } else if ((userGr >= 67) && (userGr <= 79)){
-            System.out.println("You received an C");
+            } else if (userGr >= 67){
+                grade = String.valueOf('C');
 
-        } else if ((userGr >= 60) && (userGr <= 66)){
-            System.out.println("You received an D");
+            } else if (userGr >= 60){
+                grade = String.valueOf('D');
 
-        } else if ((userGr >= 0) && (userGr <= 59)){
-            System.out.println("You received an F");
+            } else if (userGr >= 0){
+                grade = String.valueOf('F');
 
-        }
+            }
+            //Display grade
+            System.out.println("Your grade: " + grade);
 
-        // need help with last problem and finishing the exercise
+            // Ask user if they would like to continue
+            System.out.println("Would you like to continue? Enter yes or no");
+            answer = input2.next();
+
+        } while (answer.equals("yes") || answer.equals("Yes"));
+
 
 
 
