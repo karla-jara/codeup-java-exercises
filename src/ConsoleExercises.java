@@ -33,6 +33,28 @@ public class ConsoleExercises {
         String sentenceInput = sentence.nextLine();
         System.out.println("The sentence entered is: " + sentenceInput);
 
+        // Calculate the perimeter of the classroom
+
+        Scanner length = new Scanner(System.in);
+        Scanner height = new Scanner(System.in);
+
+        System.out.print("Please enter the classroom height: ");
+        int heightInput = height.nextInt();
+        System.out.print("Please enter the classroom length:");
+        int lengthInput = length.nextInt();
+
+        // Area of classroom
+        int area = heightInput * lengthInput;
+        System.out.println("The area of classroom is: " + area);
+
+        // Perimeter of classroom
+        int perimeter = (2*heightInput) + (2*lengthInput);
+        System.out.println("The perimeter of the classroom is: " + perimeter);
+
+
+
+
+
 
     }
 }

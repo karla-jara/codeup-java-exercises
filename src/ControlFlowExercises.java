@@ -97,7 +97,7 @@ public class ControlFlowExercises {
             int userGr = sc.nextInt();
             String grade = "";
 
-            if (userGr >= 88){
+            if (userGr <= 100){
                 grade = String.valueOf('A');
 
             } else if (userGr >= 80){
