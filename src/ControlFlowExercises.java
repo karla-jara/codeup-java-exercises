@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args){
 
@@ -65,6 +67,59 @@ public class ControlFlowExercises {
             } else
                 System.out.println(x);
         }
+
+        // 3. table of powers
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("What number would you like to go up to?");
+
+        int userInt = in.nextInt();
+
+
+        System.out.println("Here is your table!");
+        System.out.println("number | squared | cubed");
+        System.out.println("------ | ------- | -----");
+        for (int n = 1; n <= userInt; n++){
+            System.out.println(n +"      | "+ n*n + "       | " + n*n*n);
+
+
+        }
+
+        // 4. Convert given number grades to letter grades
+
+
+        Scanner input = new Scanner(System.in);
+        Scanner input2 = new Scanner(System.in);
+
+        String answer = input2.next();
+        System.out.println("Please provide a grade from 0 to 100");
+        int userGr = input.nextInt();
+//        String proceed = answer;
+//        while (answer == "yes"){
+//            System.out.println("Would you like to continue? Enter yes or no");
+        if ((userGr >= 88) && (userGr <= 100)){
+            System.out.println("You received an A");
+
+        } else if ((userGr >= 80) && (userGr <= 87)){
+            System.out.println("You received an B");
+
+        } else if ((userGr >= 67) && (userGr <= 79)){
+            System.out.println("You received an C");
+
+        } else if ((userGr >= 60) && (userGr <= 66)){
+            System.out.println("You received an D");
+
+        } else if ((userGr >= 0) && (userGr <= 59)){
+            System.out.println("You received an F");
+
+        }
+
+        // need help with last problem and finishing the exercise
+
+
+
+
+
 
 
 
