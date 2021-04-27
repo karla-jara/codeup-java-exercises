@@ -8,6 +8,7 @@ public class MethodsLecture {
         System.out.println(returnProductOfThreeNumbers(1,2,3));
         System.out.println(getGreetingWithName("Hola, ", "clase Marco!"));
         countToLoop(100);
+//        System.out.println(countTo100(int num));
 
 
 
@@ -18,6 +19,7 @@ public class MethodsLecture {
     public  static void sayGreeting(){
         System.out.println(getDefaultGreeting());
     }
+
     // no returned output with input
     public static void sayInput(String input) {
         System.out.println(input);
