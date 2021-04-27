@@ -39,16 +39,16 @@ public class ConsoleExercises {
         Scanner height = new Scanner(System.in);
 
         System.out.print("Please enter the classroom height: ");
-        int heightInput = height.nextInt();
+        double heightInput = height.nextDouble();
         System.out.print("Please enter the classroom length:");
-        int lengthInput = length.nextInt();
+        double lengthInput = length.nextDouble();
 
         // Area of classroom
-        int area = heightInput * lengthInput;
+        double area = heightInput * lengthInput;
         System.out.println("The area of classroom is: " + area);
 
         // Perimeter of classroom
-        int perimeter = (2*heightInput) + (2*lengthInput);
+        double perimeter = (2*heightInput) + (2*lengthInput);
         System.out.println("The perimeter of the classroom is: " + perimeter);
 
 
