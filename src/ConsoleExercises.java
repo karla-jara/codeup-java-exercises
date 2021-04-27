@@ -34,6 +34,7 @@ public class ConsoleExercises {
         System.out.println("The sentence entered is: " + sentenceInput);
 
         // Calculate the perimeter of the classroom
+        // bonus material changed the int to double and nextInt to nextDouble
 
         Scanner length = new Scanner(System.in);
         Scanner height = new Scanner(System.in);
@@ -47,7 +48,7 @@ public class ConsoleExercises {
         double area = heightInput * lengthInput;
         System.out.println("The area of classroom is: " + area);
 
-        // Perimeter of classroom
+        // Perimeter of classroom // bonus material changed the int to double and nextInt to nextDouble
         double perimeter = (2*heightInput) + (2*lengthInput);
         System.out.println("The perimeter of the classroom is: " + perimeter);
 
