@@ -7,7 +7,7 @@ public class MethodsLecture {
         System.out.println(getGreetingWithName("Marco, getDefaultGreeting!"));
         System.out.println(returnProductOfThreeNumbers(1,2,3));
         System.out.println(getGreetingWithName("Hola, ", "clase Marco!"));
-
+        countToLoop(100);
 
 
 
@@ -43,6 +43,22 @@ public class MethodsLecture {
     // method overloading
     public static String getGreetingWithName(String salutation, String name){
         return salutation + name;
+    }
+
+    // recursion aims to solve a problem by dividing it into smaller chunks
+    public static void countToLoop(int num){
+        for(int i = 0; i <= num; i++){
+            System.out.println(i);
+        }
+    }
+
+    public static int countTo100(int num){
+        System.out.println(num);
+        if (num == 100){
+            return num;
+        } else {
+            return countTo100(++num);
+        }
     }
 
 }
