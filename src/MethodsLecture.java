@@ -7,8 +7,8 @@ public class MethodsLecture {
         System.out.println(getGreetingWithName("Marco, getDefaultGreeting!"));
         System.out.println(returnProductOfThreeNumbers(1,2,3));
         System.out.println(getGreetingWithName("Hola, ", "clase Marco!"));
-        countToLoop(100);
-//        System.out.println(countTo100(int num));
+        countToLoop(10);
+        System.out.println(countTo100(1));
 
 
 
