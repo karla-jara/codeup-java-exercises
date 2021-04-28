@@ -81,12 +81,14 @@ public class MethodsExercises {
 
         if ((userRangeInput > 0) && (userRangeInput <= 10)) {
             System.out.println("Congratulations! " + userRangeInput + "is in the range of 1 and 10");
-        } else
+        } else {
             System.out.println("Your number was not in range, please try again");
+        }
 
-//        return System.out.println("Your number has been validated");
 
-    }
+        System.out.println("Your number has been validated");
+
+
 
 //        if (min <= min){
 
