@@ -12,15 +12,18 @@ public class MethodsExercises {
         System.out.println(multiplyWithoutOperator(3, 3));
 //        System.out.println(addRecur(30, 3));
 
-        //2.
+        //2. exercise continues on lines 67 - 77
+//        getInteger(1,10);
+//        Scanner in = new Scanner(System.in);
+////        System.out.println("Enter a number between " + min + " and " + max + ".");
+////        int min = in.nextInt();
+//
+//        System.out.print("Please enter a number between 1 and 10: ");
+//        int inputNum = in.nextInt();
+//        if(inputNum > 0 || inputNum < 10){
 
-        System.out.print(getInteger(1, 10));
-
-
-
+//        }
     }
-
-
 
     // Addition
     public static void addition(int num1, int num2){
@@ -45,7 +48,6 @@ public class MethodsExercises {
     // Modulus
     public static void modulus(int num1, int num2){
         System.out.println(num1 % num2);
-        //
     }
 
     // Multiply without the multiplication operator
@@ -58,39 +60,23 @@ public class MethodsExercises {
         return product;
     }
 
-    // Do above with recursion
+//    //     2. Method that validates user input is in certain range
+//    public static int getInteger(int min, int max) {
+////        int input = input.nextInt;
 //
-//    public static int addRecur(int num1, int num2){
-//        int addedRecur = 0;
-//        if ((num1 >= 0) & (num2 >=0)) {
-//            addedRecur = num1 + num2;
-//        }
-//        System.out.println(addedRecur);
-//    }
+//        Scanner in = new Scanner(System.in);
+////        System.out.print("Please enter a number between 1 and 10: ");
+////        int inputNum = in.nextInt();
+//
+//        do {
+//            System.out.println("Enter a number between " + min + " and " + max + ".");
+//            input = in.nextInt();
+//            in = new Scanner(System.in);
+//        } while (input > min || input < max);
+//        return input;
+//}
 
 
-//     2. Method that validates user input is in certain range
-//    int thisRange = getInteger(1, 10);
-    public static int getInteger(int min, int max) {
-
-        Scanner in = new Scanner(System.in);
-        System.out.print("\"Please enter a number between 1 and 10\"");
-        int userRangeInput = in.nextInt();
-//        String match = "";
-//        while
-
-        if ((userRangeInput > 0) && (userRangeInput <= 10)) {
-            System.out.println("Congratulations! " + userRangeInput + "is in the range of 1 and 10");
-        } else {
-            System.out.println("Your number was not in range, please try again");
-        }
-
-
-        System.out.println("Your number has been validated");
-
-
-
-//        if (min <= min){
 
 
 
