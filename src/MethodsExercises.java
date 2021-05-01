@@ -12,18 +12,37 @@ public class MethodsExercises {
         System.out.println(multiplyWithoutOperator(3, 3));
 //        System.out.println(addRecur(30, 3));
 
-        //2. exercise continues on lines 67 - 77
-//        getInteger(1,10);
-//        Scanner in = new Scanner(System.in);
-////        System.out.println("Enter a number between " + min + " and " + max + ".");
-////        int min = in.nextInt();
-//
-//        System.out.print("Please enter a number between 1 and 10: ");
-//        int inputNum = in.nextInt();
-//        if(inputNum > 0 || inputNum < 10){
-
-//        }
+        //2.
+        getInteger(1,10);
     }
+
+    // 2. Method that validates user input is in certain range
+    public static int getInteger (int min, int max) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Please enter a number between 1 and 10: ");
+        int inputNum = in.nextInt();
+        if (inputNum > 0 && inputNum <= 10) {
+            System.out.println("Congratulations, your number is valid!");
+        } else {
+            System.out.println("Sorry, that is not within the range of 1 to 10");
+            getInteger(1, 10);
+        }
+        return inputNum;
+    }
+
+        /*
+    public static long getPower(int base, int exponent) {
+    if (exponent == 0) {
+        return 1;
+    } else if (exponent == 1) {
+        return base;
+    } else if (exponent == 2) {
+        return base * base;
+    }
+    return base * getPower(base, exponent - 1);
+}
+     */
+
 
     // Addition
     public static void addition(int num1, int num2){
@@ -59,41 +78,5 @@ public class MethodsExercises {
         }
         return product;
     }
-
-//    //     2. Method that validates user input is in certain range
-//    public static int getInteger(int min, int max) {
-////        int input = input.nextInt;
-//
-//        Scanner in = new Scanner(System.in);
-////        System.out.print("Please enter a number between 1 and 10: ");
-////        int inputNum = in.nextInt();
-//
-//        do {
-//            System.out.println("Enter a number between " + min + " and " + max + ".");
-//            input = in.nextInt();
-//            in = new Scanner(System.in);
-//        } while (input > min || input < max);
-//        return input;
-//}
-
-
-
-
-
-
-    /*
-    public static long getPower(int base, int exponent) {
-    if (exponent == 0) {
-        return 1;
-    } else if (exponent == 1) {
-        return base;
-    } else if (exponent == 2) {
-        return base * base;
-    }
-    return base * getPower(base, exponent - 1);
-}
-     */
-
-
 
 }
