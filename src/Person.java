@@ -1,6 +1,29 @@
 public class Person {
-    public static void main(String[] args) {
+   private String name;
 
-
+    public String getName(){
+//TODO: return the person's name
+        return name;
     }
+
+   public void setName (String name){
+       // change the name property to the passed value
+       this.name = name;
+   }
+
+   public void sayHello(){
+       // print a message to the console using the person's name
+       System.out.println("Hello, " + name + ".");
+   }
+
+   public Person(String name){
+        this.name = name;
+   }
+
+   public static void main(String[] args){
+       Person one = new Person("Karla" );
+       public static String person(){
+
+       }
+   }
 }
