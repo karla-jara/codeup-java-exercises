@@ -15,7 +15,9 @@ public class MethodsExercises {
         //2.
         getInteger(1,10);
         //3.
-        getFactorial(3);
+        getFactorial();
+        //4.
+        diceRoll();
     }
 
     // 2. Method that validates user input is in certain range
@@ -36,8 +38,7 @@ public class MethodsExercises {
     public static void goAgain(){
         System.out.println("Ok, thank you for playing. Come back any time!");
     }
-
-    public static long getFactorial (int num){
+    public static long getFactorial (){
         Scanner in = new Scanner(System.in);
         System.out.print("Please enter a number between 1 and 10: ");
         long inputNum = in.nextLong();
@@ -52,39 +53,59 @@ public class MethodsExercises {
                     System.out.println(inputNum + "! = " + inputNum + " x " + f + " = " + factored);
                 }
             }else if (answer.equalsIgnoreCase("n")){
-                System.out.println("Ok, thank you for playing. Come back any time!");
+                goAgain();
             }
-
                 Scanner proceed2 = new Scanner(System.in);
                 System.out.println("Would you like to continue? \n Please enter Y for yes or N for no.");
                 String answer2 = proceed2.next();
 
-                if (answer.equalsIgnoreCase("n")){
-                    System.out.println("Ok, thank you for playing. Come back any time!");
-                }else if (answer.equalsIgnoreCase("y")){
-                    getFactorial(num);
+                if (answer2.equalsIgnoreCase("n")){
+                    goAgain();
+                }else if (answer2.equalsIgnoreCase("y")){
+                    getFactorial();
                 } else {
                     System.out.println("Sorry, you entry was not valid :(");
                 }
-            System.out.println("Sorry, you entry was not valid :(");
         }
         return inputNum;
     }
 
 
 
-        /*
-    public static long getPower(int base, int exponent) {
-    if (exponent == 0) {
-        return 1;
-    } else if (exponent == 1) {
-        return base;
-    } else if (exponent == 2) {
-        return base * base;
+    // 4.  Create an application that simulates dice rolling.
+    public static int diceRoll(){
+        Scanner in = new Scanner(System.in);
+        System.out.print("Please enter the number of sides on a pair of dice: ");
+        int sides = in.nextInt();
+        System.out.println("Thank you for your input, Now let's roll the dice!");
+        while (true){
+            int diceA = (int)(Math.random()*sides+1);
+            int diceB = (int)(Math.random()*sides+1);
+            int rollTotal = diceA + diceB;
+            System.out.println("Total points for this roll is: " + rollTotal);
+            if (rollTotal==2 || rollTotal==3 || rollTotal==12){
+                System.out.println("With a total of " + rollTotal + " points rolled. The game ends :(\n" );
+                break;
+            } else if (rollTotal==7 || rollTotal==11){
+                System.out.println("Great roll! You totalled " + rollTotal + "! \n You Win!!");
+                break;
+            }
+            Scanner proceed3 = new Scanner(System.in);
+            System.out.println("Would you like to continue? \n Please enter Y for yes or N for no.");
+            String answer3 = proceed3.next();
+
+            if (answer3.equalsIgnoreCase("n")){
+                goAgain();
+            }else if (answer3.equalsIgnoreCase("y")){
+                diceRoll();
+            } else {
+                System.out.println("Sorry, you entry was not valid :(");
+            }
+        } return sides;
+
     }
-    return base * getPower(base, exponent - 1);
-}
-     */
+
+    // 5. Game Development 101
 
 
     // Addition
