@@ -69,10 +69,17 @@ public class ControlFlowExercises {
         }
 
         // 3. table of powers
+
+        boolean userContinue = true;
+//        do{
+//            System.out.print("What number would you like to go up to?");
+//
+//
+//
+//
+//        } while(userContinue);
+
         Scanner in = new Scanner(System.in);
-
-        System.out.print("What number would you like to go up to?");
-
         int userInt = in.nextInt();
 
 
@@ -97,7 +104,7 @@ public class ControlFlowExercises {
             int userGr = sc.nextInt();
             String grade = "";
 
-            if (userGr <= 100){
+            if (userGr >= 88){
                 grade = String.valueOf('A');
 
             } else if (userGr >= 80){

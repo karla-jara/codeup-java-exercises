@@ -10,15 +10,22 @@ public class ArraysExercises {
         person[0] = "person1";
         person[1] = "person2";
         person[2] = "person3";
+
         for(String eachPeep : person){
             System.out.println("eachPeep = " + eachPeep);
         }
+//        addPerson("person4")
 
     }
-    public static String addPerson(String person){
-        String [] newPersonList = Arrays.copyOf(new String[]{person}, 4);
+
+//    private static void addPerson(String person4) {
+//    }
+
+    public static void addPerson(String [] person){
+        String [] newPersonList = Arrays.copyOf(person, 4);
 
         System.out.println(Arrays.toString(newPersonList));
-//    }
+//        return null;
+    }
 
 }
