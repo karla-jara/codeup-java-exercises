@@ -6,6 +6,7 @@ public class Input {
     private String scanner;
     Scanner in = new Scanner(System.in);
 
+
     public String getString(){
         return scanner;
     }
@@ -38,6 +39,6 @@ public class Input {
     }
 
     public static void main(String[] args){
-       yesNo(boolean);
+//       yesNo(boolean);
     }
 }
