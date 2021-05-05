@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class Input {
     private String scanner;
+
+    public Input(){
+        this.scanner= "scan";
+    }
+
     Scanner in = new Scanner(System.in);
 
 
@@ -12,33 +17,38 @@ public class Input {
     }
 
     public boolean yesNo(){
-        return scanner.equalsIgnoreCase("yes") || scanner.equalsIgnoreCase("y");
+        System.out.println("Enter yes or no");
+        String input = in.nextLine();
+        if (input.equalsIgnoreCase("yes") || input.equalsIgnoreCase("y")){
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public int getInt(int min, int max){
-        System.out.println("Please enter a integer within " + min + " and " + max);
-        if(in.nextInt() < min & in.nextInt() > max){
-            getInt();
+
+        System.out.println("Please enter an integer within " + min + " and " + max + ":");
+        return in.nextInt();
+        if(in.nextInt() < min || in.nextInt() > max){
+            this;
         }
+
+    }
+
+    public int getInt(){
+        System.out.println("Please enter an integer: ");
         return in.nextInt();
     }
 
-    public void getInt(){
-        in.nextInt();
-    }
-
     public double getDouble(double min, double max){
-        System.out.println("Please enter a double within " + min + " and " + max);
-        if(in.nextDouble() < min & in.nextDouble() > max){
-            getDouble();
-        } return in.nextDouble();
-    }
-
-    public double getDouble(){
+        System.out.println("Please enter a double within " + min + " and " + max + ":");
         return in.nextDouble();
     }
 
-    public static void main(String[] args){
-//       yesNo(boolean);
+    public double getDouble(){
+        System.out.println("Please enter a double: ");
+        return in.nextDouble();
     }
+
 }
