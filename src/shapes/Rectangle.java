@@ -9,12 +9,12 @@ public class Rectangle {
         width = rectangleWidth;
     }
 
-    public int getArea(int recLength, int recWidth){
-        return this.length*this.width;
+    public int getArea(){
+        return length*width;
     }
 
-    public int getPerimeter(int recLength, int recWidth){
-        return (2*this.length) + (2*this.width);
+    public int getPerimeter(){
+        return (2*length) + (2*width);
     }
 
 
