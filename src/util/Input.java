@@ -30,7 +30,6 @@ public class Input {
 
         System.out.println("Please enter an integer within " + min + " and " + max + ":");
         return in.nextInt();
-
     }
 
     public int getInt(){

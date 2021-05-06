@@ -4,7 +4,7 @@ public class Circle {
     private double radius;
 
     public Circle(double rad){
-        rad = radius;
+        radius = rad;
     }
     public void setRadius(double newRadius){
         this.radius = newRadius;
@@ -15,7 +15,7 @@ public class Circle {
     }
 
     public double getCircumference(){
-        return  2*Math.PI*radius;
+        return  2*(Math.PI*radius);
     }
 
 

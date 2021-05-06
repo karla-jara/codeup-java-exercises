@@ -10,6 +10,8 @@ public class MoviesApplication {
         Scanner in = new Scanner(System.in);
         int userInput = in.nextInt();
 
+
+
 // use matrix
         /*
         What would you like to do?
