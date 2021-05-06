@@ -30,9 +30,6 @@ public class Input {
 
         System.out.println("Please enter an integer within " + min + " and " + max + ":");
         return in.nextInt();
-        if(in.nextInt() < min || in.nextInt() > max){
-            this;
-        }
 
     }
 

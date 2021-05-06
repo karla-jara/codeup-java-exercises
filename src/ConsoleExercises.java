@@ -56,6 +56,8 @@ public class ConsoleExercises {
         double perimeter = (2*heightInput) + (2*lengthInput);
         System.out.println("The perimeter of the classroom is: " + perimeter);
 
+        // Not sure how to use parse like it was stated
+
 
     }
 }
