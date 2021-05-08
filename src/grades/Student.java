@@ -2,16 +2,21 @@ package grades;
 
 import java.util.ArrayList;
     public class Student{
-        private String nameFirst;
+        private String name;
         private ArrayList<Double> grades;
 
+
         public void setStudent(String studentName){
-            this.nameFirst = studentName;
+            this.name = studentName;
             this.grades = new ArrayList<>();
         }
 
         public String getName(){
-            return nameFirst;
+            return name;
+        }
+
+        public ArrayList<Double> getGrades(){
+            return grades;
         }
 
         public void addGrade(double grade){
