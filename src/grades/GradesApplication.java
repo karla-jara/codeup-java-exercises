@@ -2,8 +2,8 @@ package grades;
 
 import java.util.HashMap;
 
-public class GradesApplication{
-    public static void main(String [] args){
+public class GradesApplication {
+    public static void main(String[] args) {
         HashMap<String, Student> students = new HashMap<>();
 
 
@@ -16,7 +16,7 @@ public class GradesApplication{
         student1.addGrade(93);
         students.put("karlitasway", student1);
 
-        Student student2 = new Student ();
+        Student student2 = new Student();
         student2.setStudent("Krystle Alcorta");
         student2.addGrade(77);
         student2.addGrade(84);
@@ -41,9 +41,9 @@ public class GradesApplication{
         students.put("casinoman", student4);
 
     }
+}
+//    public interface GithubUserInfo {
+//        String display(Student students);
+//    }
 
-    public interface GithubUserInfo {
-        String display(Student students);
-    }
-
-    class ConsoleGithubUserInfo implements GithubUserInfo{
+//    class ConsoleGithubUserInfo implements GithubUserInfo{

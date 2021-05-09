@@ -9,7 +9,7 @@ public class InputTest {
         System.out.println("inputOf.yesNo() = " + inputOf.yesNo());
         System.out.println("inputOf.getInt(3,5) = " + inputOf.getInt(3,5));
         System.out.println("inputOf.getInt() = " + inputOf.getInt());
-        System.out.println("inputOf.getDouble(3,4) = " + inputOf.getDouble(3, 4));
+        System.out.println("inputOf.getDouble(30.0,40.0) = " + inputOf.getDouble(30.0, 40.0));
         System.out.println("inputOf.getDouble() = " + inputOf.getDouble());
 
     }

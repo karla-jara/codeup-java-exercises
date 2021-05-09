@@ -44,7 +44,7 @@ import java.util.ArrayList;
 
         Student student2 = new Student ();
         student2.setStudent("Krystle Alcorta");
-        student2.addGrade(77);
+        student2.addGrade(97);
         student2.addGrade(84);
         student2.addGrade(76);
         student2.addGrade(97);

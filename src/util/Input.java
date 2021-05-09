@@ -4,16 +4,17 @@ import java.util.Scanner;
 
 public class Input {
     private String scanner;
+    Scanner in = new Scanner(System.in);
 
     public Input(){
         this.scanner= "scan";
     }
 
-    Scanner in = new Scanner(System.in);
-
-
     public String getString(){
-        return scanner;
+        System.out.println("Please enter something");
+//        Input inputOf = new Input();
+        String input = in.nextLine();
+        return input;
     }
 
     public boolean yesNo(){
@@ -27,9 +28,14 @@ public class Input {
     }
 
     public int getInt(int min, int max){
-
         System.out.println("Please enter an integer within " + min + " and " + max + ":");
-        return in.nextInt();
+        int input = in.nextInt();
+        if (input <= min || input >= max) {
+            getInt(min, max);
+        } else {
+            return input;
+        }
+        return input;
     }
 
     public int getInt(){
@@ -39,12 +45,19 @@ public class Input {
 
     public double getDouble(double min, double max){
         System.out.println("Please enter a double within " + min + " and " + max + ":");
-        return in.nextDouble();
+        double input = in.nextDouble();
+        if (input <= min || input >= max){
+            getDouble(min,max);
+        } else {
+            return input;
+        }
+        return input;
     }
 
     public double getDouble(){
         System.out.println("Please enter a double: ");
         return in.nextDouble();
     }
+
 
 }
