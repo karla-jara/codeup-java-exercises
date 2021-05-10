@@ -3,11 +3,8 @@ package shapes;
 public class Circle {
     private double radius;
 
-    public Circle(double rad){
-        radius = rad;
-    }
-    public void setRadius(double newRadius){
-        this.radius = newRadius;
+    public Circle(double radius){
+        this.radius = radius;
     }
 
     public double getArea(){
