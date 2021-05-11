@@ -26,7 +26,7 @@ public class Movie {
     }
 
     public String allMovies(){
-        return name + category;
+        return name + " -- " + category;
     }
 
 

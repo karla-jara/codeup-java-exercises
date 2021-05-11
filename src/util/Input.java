@@ -68,6 +68,8 @@ public class Input {
         return in.nextDouble();
     }
 
+
+
 //    public int getBinary(IntBinaryOperator binary){
 //        try{
 //            System.out.println("Please enter a binary number: ");
