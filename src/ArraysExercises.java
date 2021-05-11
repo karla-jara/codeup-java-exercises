@@ -5,7 +5,6 @@ public class ArraysExercises {
         int[] numbers = {1, 2, 3, 4, 5};
         System.out.println(Arrays.toString(numbers));
 
-
         Person[] persons =  new Person[3];
         persons[0] = new Person("person1");
         persons[1] = new Person("person2");

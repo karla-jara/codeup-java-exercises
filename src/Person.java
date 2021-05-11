@@ -20,14 +20,11 @@ public class Person { // defines a custom type
    public Person(String name){
         this.name = name;
    }
-
    public static void main(String[] args) {
        Person name = new Person("Karla"); //this references ln 2
        System.out.println(name.getName()); // calling ln 4 for retrieving created name on ln 25
        name.setName("Jara");
        name.sayHello();
-
-
    // 1. Understanding references: guessed the return to be two true statements
 //       Person person1 = new Person("John");
 //       Person person2 = new Person("John");
@@ -48,6 +45,4 @@ public class Person { // defines a custom type
        System.out.println(person1.getName());
        System.out.println(person2.getName());
     }
-
-
 }

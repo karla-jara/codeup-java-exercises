@@ -6,30 +6,23 @@ import java.util.Scanner;
 public class MoviesApplication {
     public static void main(String[] args){
 
-        System.out.println("Would you like to view the full list of movies");
         Scanner in = new Scanner(System.in);
-        int userInput = in.nextInt();
+        int inputMovieChoice = in.nextInt();
 
 
 
-// use matrix
-        /*
-        What would you like to do?
 
-        0 - exit
-        1 - view all movies
-        2 - view movies in the animated category
-        3 - view movies in the drama category
-        4 - view movies in the horror category
-        5 - view movies in the scifi category
+        System.out.println("What would you like to do?");
 
-        Enter your choice: 1
+        System.out.println("0 - exit");
+        System.out.println("1 - view all movies");
+        System.out.println("2 - view movies in the animated category");
+        System.out.println("3 - view movies in the drama category");
+        System.out.println("4 - view movies in the horror category");
+        System.out.println("5 - view movies in the scifi category");
 
-        Frankenstein -- horror
-        Goodfellas -- drama
-        Pulp Fiction -- drama
-        ...
-         */
+        System.out.println("Enter your choice: ");
+
 
     }
 
