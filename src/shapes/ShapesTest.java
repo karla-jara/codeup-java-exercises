@@ -1,7 +1,23 @@
-//package shapes;
-//
-//public class ShapesTest {
-//    public static void main(String [] args){
+package shapes;
+
+public class ShapesTest {
+    public static void main(String [] args) {
+
+        Measurable myShape;
+        myShape = new Square(5);
+
+        System.out.println("myShape.getArea() = " + myShape.getArea());
+        System.out.println("myShape.getPerimeter() = " + myShape.getPerimeter());
+
+
+        myShape = new Rectangle(2,4);
+
+        System.out.println("myShape.getArea() = " + myShape.getArea());
+        System.out.println("myShape.getPerimeter() = " + myShape.getPerimeter());
+
+
+//        myShape.getArea(Square(5));
+
 //        Rectangle box1 = new Rectangle(4, 5);
 //
 //        System.out.println("box1.getPerimeter() = " + box1.getPerimeter());
@@ -15,7 +31,7 @@
 //        Rectangle box3 = new Square(6);
 //        System.out.println("box3.getArea() = " + box3.getArea());
 //    }
-//
-//
-//
-//}
+
+
+    }
+}
