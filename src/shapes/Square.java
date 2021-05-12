@@ -1,33 +1,19 @@
 package shapes;
 
-public class Square extends Rectangle {
+public abstract class Square extends Quadrilateral {
+    public Square(int l, int w) {
+        super(l, w);
+    }
 
+    @Override
+    public int setLength() {
+        return this.length;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @Override
+    public int setWidth() {
+        return this.width;
+    }
 
 
 //    private int side;

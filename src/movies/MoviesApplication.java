@@ -2,14 +2,9 @@ package movies;
 
 import util.Input;
 
-import java.util.Arrays;
-import java.util.Scanner;
-
 public class MoviesApplication {
     public static void main(String[] args){
-
-//        Scanner in = new Scanner(System.in);
-
+        Movie[] moviesArray = MoviesArray.findAll();
 
         System.out.println("What would you like to do?");
 
@@ -22,28 +17,39 @@ public class MoviesApplication {
 
         System.out.println("Enter your choice: ");
         Input inputMovieChoice = new Input();
-        String inputSelected = inputMovieChoice.getString();
-        System.out.println("inputMovieChoice = " + inputMovieChoice);
-        if (inputSelected == "1"){
-            Movie newMovieChoice = new Movie(inputSelected, inputSelected);
-
-            Arrays.stream(MoviesArray.findAll()).toList();
-
-//            System.out.println("view all movies: " + newMovieChoice.allMovies());
+        int inputSelected = inputMovieChoice.getInt();
+        if (inputSelected == 0){
+            System.out.println("Good-bye, have a great day!");
         }
-//            Movie selectedArray = new Movie (movieNam, movieCat);
-//            System.out.println(MoviesArray.findAll().toString());
-
-//            (int i = 0; i < MoviesArray.findAll().length; i++){
-//              if (selectedArray[i] == )
-//        } if (inputSelected == 0){
-
-//            selectedArray.getCategory();
-//        } if (inputSelected == 3){
-
-//        }
-
-
+        if (inputSelected == 1){
+            for (int i = 0; i < moviesArray.length; i++){
+                System.out.println(moviesArray[i].allMovies());
+            }
+        } if (inputSelected == 2){
+            for(int i = 0; i < moviesArray.length; i++){
+                if(moviesArray[i].getCategory().equalsIgnoreCase("animated")){
+                    System.out.println(moviesArray[i].allMovies());
+                }
+            }
+        } if (inputSelected == 3){
+            for(int i = 0; i < moviesArray.length; i++){
+                if(moviesArray[i].getCategory().equalsIgnoreCase("drama")){
+                    System.out.println(moviesArray[i].allMovies());
+                }
+            }
+        } if (inputSelected == 4){
+            for (int i = 0; i < moviesArray.length; i++){
+                if(moviesArray[i].getCategory().equalsIgnoreCase("horror")){
+                    System.out.println(moviesArray[i].allMovies());
+                }
+            }
+        } if (inputSelected == 5){
+            for (int i = 0; i < moviesArray.length; i++){
+                if(moviesArray[i].getCategory().equalsIgnoreCase("sci-fi")){
+                    System.out.println(moviesArray[i].allMovies());
+                }
+            }
+        }
     }
 
 }

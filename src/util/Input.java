@@ -1,7 +1,6 @@
 package util;
 
 import java.util.Scanner;
-import java.util.function.IntBinaryOperator;
 
 public class Input {
     private String scanner;
@@ -12,7 +11,6 @@ public class Input {
     }
 
     public String getString(){
-        System.out.println("Enter input");
         String input = in.nextLine();
         return input;
     }
@@ -43,7 +41,6 @@ public class Input {
     }
 
     public int getInt(){
-        System.out.println("Please enter an integer: ");
         return in.nextInt();
     }
 
@@ -67,14 +64,5 @@ public class Input {
         System.out.println("Please enter a double: ");
         return in.nextDouble();
     }
-
-
-
-//    public int getBinary(IntBinaryOperator binary){
-//        try{
-//            System.out.println("Please enter a binary number: ");
-//            int input =
-//        }
-//    }
 
 }

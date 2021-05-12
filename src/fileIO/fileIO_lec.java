@@ -36,7 +36,7 @@ public class fileIO_lec {
 
         //Alright! So, we've built a Path - we used the Path with Files.exist - now though, how do we get into the creation of new files/directories?
         String directory = "./src/fileIO/data"; //~~ relative path to where we want our directory to go
-        String filename = "groceryList.txt"; //~~filename for our desired file
+        String filename = "groceryList.txt"; //~~ filename for our desired file
 
         Path dataDirectory = Paths.get(directory);
         Path dataFile = Paths.get(directory, filename);
