@@ -1,6 +1,7 @@
 package grades;
 
 import java.util.HashMap;
+import java.util.List;
 
 public class GradesApplication {
     public static void main(String[] args) {
@@ -17,12 +18,12 @@ public class GradesApplication {
         students.put("karlitasway", student1);
 
         Student student2 = new Student();
-        student2.setStudent("Krystle Alcorta");
+        student2.setStudent("Kevin Burke");
         student2.addGrade(77);
         student2.addGrade(84);
         student2.addGrade(76);
         student2.addGrade(97);
-        students.put("lovelykrys", student2);
+        students.put("lonestar33", student2);
 
         Student student3 = new Student();
         student3.setStudent("James Bond");
@@ -41,9 +42,17 @@ public class GradesApplication {
         students.put("casinoman", student4);
 
     }
+    public String displayStudent(HashMap<String, Student> students){
+        System.out.println("         Name         |  Usernames\n-----------------------------------");
+//        for (Student students : student){
+            System.out.println("student = " + students);
+//
+        return null;
+    }
+
+
+
+
 }
-//    public interface GithubUserInfo {
-//        String display(Student students);
-//    }
 
 //    class ConsoleGithubUserInfo implements GithubUserInfo{
