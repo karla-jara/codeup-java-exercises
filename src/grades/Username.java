@@ -1,8 +1,8 @@
 package grades;
 
-public interface Username {
+interface Username {
 
-        String display(Student students);
+        String display(Student usernames);
 
 
 }
